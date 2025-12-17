@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+<button class="sound-toggle" onclick="toggleSound()">🎶</button>
+<div class="bg"></div>
+<div class="candle-glow"></div>
+<canvas id="particles"></canvas>
+
+<div class="memory-container">
+    <h1 id="personName"></h1>
+    <div class="timeline" id="timeline"></div>
+
+    <button class="leave-btn" onclick="openMessage()">Leave a message</button>
+
+    <div class="message-box" id="messageBox">
+        <textarea id="userMessage" placeholder="Write a memory..."></textarea>
+        <button onclick="saveMessage()">Save</button>
+    </div>
+
+
+    <!-- ONLY THIS PART CHANGED -->
+    <div class="card float" id="memoryCard"></div>
+</div>
+<audio id="ambientSound" loop>
+    <source src="ambient.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
 </body>
 </html>
