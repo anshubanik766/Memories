@@ -1,10 +1,13 @@
 ---
 
+---
+
 # ✨ Echoes of Someone You Love ✨
 
 **Echoes** is a cozy, interactive website where you can **create and relive memories** of your loved ones. 💖 It combines a **calming visual experience** with a **smart AI-powered memory generator**, making each moment feel special and magical. 🌸
 
 ---
+
 
 ## 🌟 Features
 
