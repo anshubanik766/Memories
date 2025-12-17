@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Echoes</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+<canvas id="particles"></canvas>
+
+<!-- Floating Control Buttons -->
+<div class="button-group">
+    <button onclick="toggleTheme()" title="Toggle theme">🌓</button>
+    <button onclick="toggleSound()" title="Ambient sound">🎶</button>
+    <button onclick="openMessage()" title="Last message">🕊️</button>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+    <h1>Echoes of Someone You Love</h1>
+
+    <input
+            type="text"
+            id="nameInput"
+            placeholder="Loved one's name"
+    />
+
+    <textarea
+            id="descInput"
+            placeholder="Describe them..."
+    ></textarea>
+
+    <button class="main-btn" onclick="createMemory()">
+        Create Memories
+    </button>
+
+    <p id="statusText"></p>
+</div>
+
+<!-- Ambient Sound -->
+<audio id="ambientSound" loop>
+    <source src="ambient.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+<div class="scroll-indicator" onclick="scrollDown()">
+    ↓
+</div>
+
+</body>
+
+</html>
